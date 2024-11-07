@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Text</title>
+</head>
+<body>
+
+    <h1> View Shared Text </h1>
+    <div> {{ rendered_content|safe }} </div>
+
+    <a href="{% url 'edit_text' shared_text.slug %}"> Edit </a>
+    
+</body>
+</html>
